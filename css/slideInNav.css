@@ -1,0 +1,177 @@
+/***********************
+INSTRUCTIONS FOR USE
+
+Uh ok, pretty straight forward. Three easy steps bros:
+
+1. Add class slideInNav to the nav ul (where you'd add sf-menu).
+2. then add <div id="slide-menu"> right after the closing tag of your navigation (should be </nav>, if not what are you doing it's 2015).
+3. Finally, before the closing </body> tag and above the javascript, add </div> to close the slide-menu div.
+
+And include the slideInNav.css and slideInNav.js files.
+
+***********************/
+
+
+@media only screen and (max-width: 767px) {
+    * {
+        margin: 0px;
+    }
+    body {
+        width: 100%;
+        background: #1b1b1b;
+        overflow-x: hidden;
+    }
+    .slideInWrap {
+        overflow: hidden;
+        width: 100%;
+    }
+    #menubar {
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        padding: 5px;
+        position: relative;
+        z-index: 9999;
+        float: left;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 50px;
+    }
+    .slideInNavBtn {
+        cursor: pointer;
+        height: 35px;
+        float: left;
+    }
+    .menu-icon {
+        width: 30px;
+        display: inline-block;
+        cursor: pointer;
+        padding: 5px;
+        margin: 4px;
+        border-radius: 5px;
+        border: thin solid #333;
+        float: none;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .menu-icon:hover {
+        background: #1b1b1b;
+    }
+    .menu-icon span {
+        background: #fff;
+        display: block;
+        width: 100%;
+        height: 3px;
+        float: right;
+        clear: right;
+        margin: 2px 0;
+    }
+    .menu-txt {
+        display: block;
+        float: right;
+        margin-top: 7px;
+    }
+    .slideInNav {
+        margin:50px 0 0 -250px;
+        position: absolute;
+        left: 0;
+        float: left;
+        width: 250px;
+        overflow: hidden;
+        /*
+  height: 100%;
+*/
+        
+        background-color: #1b1b1b;
+    }
+
+    .slideInNav li a {
+        padding: 10px;
+        display: block;
+        color: white;
+        border-bottom: thin solid #333;
+        text-decoration: none;
+    }
+    .dropdown {
+        display: block;
+        padding: 16px 15px;
+        float: right;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(255, 255, 255, .1);
+        color: #999;
+        cursor: pointer;
+        text-align: center;
+    }
+    .dropdown:after {
+        content: "+";
+    }
+    .closed:after {
+        content: "–";
+    }
+    .dropdown:hover {
+        background: rgba(255, 255, 255, .2);
+        color: #ccc;
+    }
+    .slideInNav li {
+        list-style: none;
+        position: relative;
+    }
+    .slideInNav li ul {
+        display: none;
+        background: rgba(0, 0, 0, .4);
+        padding: 0;
+    }
+    .slideInNav li:hover {
+        background: rgba(255, 255, 255, .1) !important;
+    }
+    .slideInNav li li a {
+        text-indent: 15px;
+    }
+    .slideInNav li li li a {
+        text-indent: 30px;
+    }
+    .slideInNav li ul ul {
+        background: rgba(0, 0, 0, .5);
+    }
+    #slide-menu {
+        width: 100%;
+        background-color: #fff;
+        z-index: 5;
+        /*position:fixed;*/
+        
+        overflow-x: hidden;
+        position: relative;
+        left: 0px;
+        height: 100%;
+        -webkit-box-shadow: -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+        moz-box-shadow: -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+        o-box-shadow: -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    }
+    #slide-menu p {
+        padding: 10px;
+    }
+    .overlay {
+        background: rgba(0, 0, 0, .5);
+        z-index: 999;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        float: left;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-icon,
+    .menu-txt {
+        display: none;
+    }
+}
