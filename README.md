@@ -1,13 +1,13 @@
-Slide in Navigation v.1
+Slide In Navigation v.1
 ===========
 
-**Please note: This is not a menu system replacement. It is simply a lightweight piece of jQuery to convert a standard navigation into a mobile/tablet navigation.**
+**A lightweight piece of jQuery to convert a navigation into a mobile/tablet navigation.**
 
 **SlideInNav only works for one menu per page.**
 
-This isn't for making dropdown menus on desktop. In fact, it doesn't show up on desktop at all. Use <a title="Superfish Drop down menus" href="http://plugins.jquery.com/superfish/">Superfish</a> in conjunction with this one.
+This isn't for making dropdown menus on desktop. In fact, it doesn't show up on desktop at all. Use <a title="Superfish Drop down menus" href="http://plugins.jquery.com/superfish/">Superfish</a> in conjunction with this one. Basically, it makes a menu slide in from the left. No options for the right yet. <a href="#">Check out the demo</a>.
 
-INSTRUCTIONS FOR USE
+**INSTRUCTIONS FOR USE**
 
 Uh ok, pretty straight forward. Three easy steps bros:
 
