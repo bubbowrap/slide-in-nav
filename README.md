@@ -3,15 +3,17 @@ Slide in Navigation v.1
 
 **Please note: This is not a menu system replacement. It is simply a lightweight piece of jQuery to convert a standard navigation into a mobile/tablet navigation.**
 
-**MeanMenu only works for one menu per page.**
+**SlideInNav only works for one menu per page.**
 
-If you are looking for drop down functionality on the desktop, MeanMenu doesn't do it. Use <a title="Superfish Drop down menus" href="http://plugins.jquery.com/superfish/">Superfish</a> as well as MeanMenu. You can see Superfish + MeanMenu on all of our themes, for example <a title="Literary Theme" href="http://www.meanthemes.com/theme/literary/">Literary</a>.
+This isn't for making dropdown menus on desktop. In fact, it doesn't show up on desktop at all. Use <a title="Superfish Drop down menus" href="http://plugins.jquery.com/superfish/">Superfish</a> in conjunction with this one.
 
-And yes, it works with jQuery 2.0 - obviously IE 7 & 8 will not work.
+INSTRUCTIONS FOR USE
 
-Just include the jQuery library (http://jquery.com)
+Uh ok, pretty straight forward. Three easy steps bros:
 
-Then this file (jquery.meanmenu.js)
+1. Add class slideInNav to the nav ul (where you'd add sf-menu).
+2. then add <div id="slide-menu"> right after the closing tag of your navigation (should be </nav>, if not what are you doing it's 2015).
+3. Finally, before the closing </body> tag and above the javascript, add </div> to close the slide-menu div.
 
 in your HTML e.g.
 
@@ -22,77 +24,4 @@ Then add the CSS for this after all of your other CSS in the &lt;head&gt; sectio
 
 	<link rel="stylesheet" href="css/slideInNav.css" media="all" />
 
-Then in your usual document.ready, this is working under the assumption your navigation is in <header><nav> structure...
-
-    jQuery(document).ready(function () {
-    	jQuery('header nav').meanmenu();
-    });
-
-There are the following options (Options are shown with their defaults)...
-
-meanMenuContainer: 'body'
-
-- Choose where meanmenu will be placed within the HTML
-
-meanMenuClose: "X"
-
-- Single character you want to represent the close menu button
-
-meanMenuCloseSize: "18px"
-
-- Set font size of close button
-
-meanMenuOpen: "<span /><span /><span />"
-
-- Text/markup you want when menu is closed, styling in CSS provides 3 bars with these spans
-
-meanRevealPosition: "right"
-
-- Left right or center positions
-
-meanRevealPositionDistance: "0"
-
-- Tweak the position of the menu
-
-meanRevealColour: ""
-
-- Override CSS colours for the reveal background
-
-meanScreenWidth: "480"
-
-- Set the screen width you want meanmenu to kick in at
-
-meanNavPush: ""
-
-- Set a height here in px, em or % if you want to budge your layout now the navigation is missing.
-
-meanShowChildren: true
-
-- true to show children in the menu, false to hide them
-
-meanExpandableChildren: true
-
-- true to allow expand/collapse children
-
-meanExpand: "+"
-
-- single character you want to represent the expand for ULs
-
-meanContract: "-"
-
-- single character you want to represent the contract for ULs
-
-meanRemoveAttrs: false
-- true to remove classes and IDs, false to keep them
-
-onePage: false
-
-- set to true for one page sites, the navigation will close back up on itself on click
-
-removeElements: ""
-
-- enter comma separated values in here of elements you want hidden from the container of meanmenu e.g. if you had a search box called .search, enter ".search" in here
-
-meanDisplay: "block"
-
-- by default this is block, sometimes you may want to switch this to table or table-cell or inline-block etc. so now you can.
+I plan to come back to this and make it way easier to implement once I get some free time; I made this little script well before I got 'okay' at javascript/jQuery.
