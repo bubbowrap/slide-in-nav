@@ -1,11 +1,5 @@
-MeanMenu v2.0.8
+Slide in Navigation v.1
 ===========
-
-Looking for a WordPress version?
----
-Our friends over at PluginHero have just released the <a href="http://pluginhero.com/portfolio/meanmenu/">WordPress version of MeanMenu</a>.
-
-A menu system for converting a standard menu into a mobile/tablet responsive menu, media query independent.
 
 **Please note: This is not a menu system replacement. It is simply a lightweight piece of jQuery to convert a standard navigation into a mobile/tablet navigation.**
 
@@ -15,10 +9,6 @@ If you are looking for drop down functionality on the desktop, MeanMenu doesn't 
 
 And yes, it works with jQuery 2.0 - obviously IE 7 & 8 will not work.
 
-Live Demo:
-<a href="http://www.meanthemes.com/demo/meanmenu/demo.html">http://www.meanthemes.com/demo/meanmenu/demo.html</a>
-
-
 Just include the jQuery library (http://jquery.com)
 
 Then this file (jquery.meanmenu.js)
@@ -26,11 +16,11 @@ Then this file (jquery.meanmenu.js)
 in your HTML e.g.
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-    <script src="assets/js/plugins/jquery.meanmenu.js"></script>
+    <script src="js/slideInNav.js"></script>
 
 Then add the CSS for this after all of your other CSS in the &lt;head&gt; section.
 
-	<link rel="stylesheet" href="meanmenu.css" media="all" />
+	<link rel="stylesheet" href="css/slideInNav.css" media="all" />
 
 Then in your usual document.ready, this is working under the assumption your navigation is in <header><nav> structure...
 
