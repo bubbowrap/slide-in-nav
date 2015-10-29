@@ -1,7 +1,7 @@
 Slide In Navigation v.1
 ===========
 
-**A lightweight piece of jQuery to convert a navigation into a mobile/tablet navigation.**
+**A lightweight piece of jQuery to convert a desktop navigation into a mobile/tablet navigation.**
 
 **SlideInNav only works for one menu per page.**
 
